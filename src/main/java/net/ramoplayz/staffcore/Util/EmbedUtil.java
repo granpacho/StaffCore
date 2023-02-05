@@ -1,4 +1,4 @@
-package net.ramoplayz.staffcore.Util;
+package net.ramoplayz.staffcore.util;
 
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.md_5.bungee.api.ChatColor;

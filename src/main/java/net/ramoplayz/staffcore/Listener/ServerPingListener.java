@@ -1,13 +1,13 @@
-package net.ramoplayz.staffcore.Listener;
+package net.ramoplayz.staffcore.listener;
 
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.ServerPing;
 import net.md_5.bungee.api.event.ProxyPingEvent;
 import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.event.EventHandler;
-import net.ramoplayz.staffcore.Manager.ConfigManager;
 import net.ramoplayz.staffcore.StaffCorePlugin;
-import net.ramoplayz.staffcore.Util.MessageUtil;
+import net.ramoplayz.staffcore.manager.ConfigManager;
+import net.ramoplayz.staffcore.util.MessageUtil;
 
 public class ServerPingListener implements Listener {
 

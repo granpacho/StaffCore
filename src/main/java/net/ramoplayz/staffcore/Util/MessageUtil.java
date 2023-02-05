@@ -1,4 +1,4 @@
-package net.ramoplayz.staffcore.Util;
+package net.ramoplayz.staffcore.util;
 
 import net.md_5.bungee.api.ChatColor;
 

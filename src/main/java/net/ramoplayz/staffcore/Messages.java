@@ -1,7 +1,7 @@
 package net.ramoplayz.staffcore;
 
-import net.ramoplayz.staffcore.Manager.ConfigManager;
-import net.ramoplayz.staffcore.Util.MessageUtil;
+import net.ramoplayz.staffcore.manager.ConfigManager;
+import net.ramoplayz.staffcore.util.MessageUtil;
 
 public enum Messages {
 

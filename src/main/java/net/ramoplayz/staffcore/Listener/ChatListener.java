@@ -1,11 +1,11 @@
-package net.ramoplayz.staffcore.Listener;
+package net.ramoplayz.staffcore.listener;
 
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.event.ChatEvent;
 import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.event.EventHandler;
 import net.ramoplayz.staffcore.StaffCorePlugin;
-import net.ramoplayz.staffcore.Util.EmbedUtil;
+import net.ramoplayz.staffcore.util.EmbedUtil;
 
 import java.awt.*;
 

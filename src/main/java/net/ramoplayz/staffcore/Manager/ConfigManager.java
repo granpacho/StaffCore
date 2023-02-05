@@ -1,4 +1,4 @@
-package net.ramoplayz.staffcore.Manager;
+package net.ramoplayz.staffcore.manager;
 
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.ConfigurationProvider;

@@ -1,12 +1,12 @@
-package net.ramoplayz.staffcore.Listener;
+package net.ramoplayz.staffcore.listener;
 
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
-import net.ramoplayz.staffcore.Manager.ConfigManager;
 import net.ramoplayz.staffcore.Messages;
 import net.ramoplayz.staffcore.StaffCorePlugin;
+import net.ramoplayz.staffcore.manager.ConfigManager;
 
 import java.lang.reflect.Member;
 

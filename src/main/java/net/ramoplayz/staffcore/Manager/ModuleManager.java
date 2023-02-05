@@ -1,4 +1,4 @@
-package net.ramoplayz.staffcore.Manager;
+package net.ramoplayz.staffcore.manager;
 
 public class ModuleManager {
 

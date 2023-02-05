@@ -7,12 +7,12 @@ import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.plugin.Plugin;
-import net.ramoplayz.staffcore.Command.*;
-import net.ramoplayz.staffcore.Listener.*;
-import net.ramoplayz.staffcore.Manager.ConfigManager;
-import net.ramoplayz.staffcore.Manager.ModuleManager;
-import net.ramoplayz.staffcore.Manager.StaffManager;
-import net.ramoplayz.staffcore.Util.EmbedUtil;
+import net.ramoplayz.staffcore.command.*;
+import net.ramoplayz.staffcore.listener.*;
+import net.ramoplayz.staffcore.manager.ConfigManager;
+import net.ramoplayz.staffcore.manager.ModuleManager;
+import net.ramoplayz.staffcore.manager.StaffManager;
+import net.ramoplayz.staffcore.util.EmbedUtil;
 
 public final class StaffCorePlugin extends Plugin {
 

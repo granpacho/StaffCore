@@ -1,11 +1,11 @@
-package net.ramoplayz.staffcore.Command;
+package net.ramoplayz.staffcore.command;
 
 import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.plugin.Command;
-import net.ramoplayz.staffcore.Manager.ConfigManager;
 import net.ramoplayz.staffcore.Messages;
 import net.ramoplayz.staffcore.StaffCorePlugin;
+import net.ramoplayz.staffcore.manager.ConfigManager;
 
 public class StaffChatToggleCommand extends Command {
 

@@ -1,4 +1,4 @@
-package net.ramoplayz.staffcore.Listener;
+package net.ramoplayz.staffcore.listener;
 
 import de.myzelyam.api.vanish.BungeePlayerHideEvent;
 import de.myzelyam.api.vanish.BungeePlayerShowEvent;
@@ -7,7 +7,7 @@ import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.event.EventHandler;
 import net.ramoplayz.staffcore.Messages;
 import net.ramoplayz.staffcore.StaffCorePlugin;
-import net.ramoplayz.staffcore.Util.EmbedUtil;
+import net.ramoplayz.staffcore.util.EmbedUtil;
 
 import java.awt.*;
 
@@ -22,7 +22,7 @@ public class VanishListener implements Listener {
 	@EventHandler
 	public void onVanish(BungeePlayerHideEvent e) {
 		ProxiedPlayer player = e.getPlayer();
-		
+
 		if (!staffCorePlugin.getModuleManager().getPremiumVanishModule()) {
 			return;
 		}

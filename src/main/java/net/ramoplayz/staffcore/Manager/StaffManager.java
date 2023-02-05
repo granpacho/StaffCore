@@ -1,4 +1,4 @@
-package net.ramoplayz.staffcore.Manager;
+package net.ramoplayz.staffcore.manager;
 
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.md_5.bungee.api.ProxyServer;
@@ -17,7 +17,7 @@ public class StaffManager {
 	private List<ProxiedPlayer> isACToggled = new ArrayList<>();
 
 	private List<ProxiedPlayer> isVanishToggled = new ArrayList<>();
-	
+
 	public StaffManager(StaffCorePlugin staffCorePlugin) {
 		this.staffCorePlugin = staffCorePlugin;
 	}

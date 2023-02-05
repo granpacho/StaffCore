@@ -56,6 +56,18 @@ public final class StaffCorePlugin extends Plugin {
 			jda = builder.build();
 		}
 	}
+	
+	@Override
+	public void onDisable() {
+
+		for (ProxiedPlayer player : ProxyServer.getInstance().getPlayers()) {
+			staffManager.getSCToggled().remove(player);
+			staffManager.getACToggled().remove(player);
+			staffManager.getVanishToggled().remove(player);
+		}
+
+		if (jda != null) jda.shutdownNow();
+	}
 
 	private void setConfigManager(ConfigManager configManager) {
 		configManager.createFiles();
@@ -73,17 +85,5 @@ public final class StaffCorePlugin extends Plugin {
 
 	public JDA getJda() {
 		return jda;
-	}
-
-	@Override
-	public void onDisable() {
-
-		for (ProxiedPlayer player : ProxyServer.getInstance().getPlayers()) {
-			staffManager.getSCToggled().remove(player);
-			staffManager.getACToggled().remove(player);
-			staffManager.getVanishToggled().remove(player);
-		}
-
-		if (jda != null) jda.shutdownNow();
 	}
 }

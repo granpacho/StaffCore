@@ -1,0 +1,91 @@
+#   _________ __          _____  _____  _________
+#  /   _____//  |______ _/ ____\/ ____\ \_   ___ \  ___________   ____
+#  \_____  \\   __\__  \\   __\\   __\  /    \  \/ /  _ \_  __ \_/ __ \
+#  /        \|  |  / __ \|  |   |  |    \     \___(  <_> )  | \/\  ___/
+# /_______  /|__| (____  /__|   |__|     \______  /\____/|__|    \___  >
+#         \/           \/                       \/                   \/
+
+# Enable or disable different parts of the plugin
+modules:
+  discord: true
+  server-list: true
+  premium-vanish: true
+  staff-list-command: true
+  report-command: true
+discord:
+  # You must create a discord bot at: https://discord.com/developers/applications
+  # Click "New Application" and create an application
+  # Click on "Bot" and "Add bot" and create the bot
+  # Click on "Copy" under token
+  token: ''
+  # ID of the channel were you want the staff chat messages to be sent
+  # Enable developers mode in discord: Setting -> Advanced -> Developer Mode
+  # After, right click the channel and click copy ID
+  sc-channel-id: ''
+  # ID of the channel were you want the admin chat messages to be sent
+  ac-channel-id: ''
+  # ID of the channel were you want the report messages to be sent
+  report-channel-id: ''
+  # Status of the bot
+  activity:
+    # TYPES: WATCHING, PLAYING, STREAMING, LISTENING, COMPETING
+    type: WATCHING
+    text: 'Staff Chat'
+# Control how the server looks on the server list
+server-list:
+  motd: |-
+    Hey there! Join this server!
+  # The max amount of players it says on the server list
+  # This will not limit the amount of players allowed on the server
+  max-players: 100
+# Control command names, aliases, and permissions for different commands
+commands:
+  staff-chat:
+    command: 'sc'
+    permission: 'rsc.staff'
+  sc-toggle:
+    command: 'sctoggle'
+    permission: 'rsc.staff'
+  staff-list:
+    command: 'slist'
+    permission: 'rsc.staff'
+  vanish-toggle:
+    command: 'scvt'
+    permission: 'rsc.staff'
+  admin-chat:
+    command: 'ac'
+    permission: 'rsc.admin'
+  ac-toggle:
+    command: 'actoggle'
+    permission: 'rsc.admin'
+  report:
+    command: 'report'
+    permission: 'rsc.report'
+
+# Set the messages within the plugin
+messages:
+  sc-prefix: '&8[&#03fcf0Staff&8] '
+  ac-prefix: '&8[&#ff0000Admin&8] '
+  vanish: '&e%player% &fvanished.'
+  reappear: '&e%player% &freappeared.'
+  chat-format: '&7[&e%server%&7] &e%player%: &f%message%'
+  server-join: '&e%player% &fjoined the server through &e%server%&f.'
+  server-switch: '&e%player% &fswitch from &e%from% &fto &e%to%&f.'
+  server-quit: '&e%player% &fleft the server from &e%server%&f.'
+  server-join-silent: '&e%player% &fjoined silently the server through &e%server%&f.'
+  server-switch-silent: '&e%player% &fswitch silently from &e%from% &fto &e%to%&f.'
+  server-quit-silent: '&e%player% &fleft silently the server from &e%server%&f.'
+  sc-toggle-on: '&aStaffchat toggled on.'
+  sc-toggle-off: '&cStaffchat toggled off.'
+  ac-toggle-on: '&aAdminchat toggled on.'
+  ac-toggle-off: '&cAdminchat toggled off.'
+  vanish-toggle-on: '&aVanish messages on.'
+  vanish-toggle-off: '&cVanish messages off.'
+  sc-report: '&e%player% &freported &e%reported% &fon &e%server% &ffor: &e%reason%'
+  reported: '&aYou reported &e%reported% &afor: &f%reason%'
+  report-self: '&cYou cannot report yourself!'
+  staff-list-header: '&eStaff List:'
+  staff-list-player: '&8- &f%player%'
+  already-toggled: '&cYou already have this toggled!'
+  invalid-command: '&cInvalid Command!'
+  no-permission: '&cYou do not have permission for preform this command!'

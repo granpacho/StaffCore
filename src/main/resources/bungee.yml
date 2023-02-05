@@ -1,0 +1,4 @@
+name: StaffCore
+version: '${project.version}'
+main: net.ramoplayz.staffcore.StaffCorePlugin
+description: A StaffCore

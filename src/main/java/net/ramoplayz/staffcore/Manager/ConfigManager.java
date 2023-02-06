@@ -12,16 +12,16 @@ import java.nio.file.Files;
 
 public class ConfigManager {
 
-	private static StaffCorePlugin staffChat;
+	private static StaffCorePlugin staffCorePlugin;
 	public static Configuration config;
 
-	public ConfigManager(StaffCorePlugin staffChat) {
-		this.staffChat = staffChat;
+	public ConfigManager(StaffCorePlugin staffCorePlugin) {
+		this.staffCorePlugin = staffCorePlugin;
 	}
 
 	public void saveConfig() {
 		try {
-			ConfigurationProvider.getProvider(YamlConfiguration.class).save(config, new File(staffChat.getDataFolder(), "config.yml"));
+			ConfigurationProvider.getProvider(YamlConfiguration.class).save(config, new File(staffCorePlugin.getDataFolder(), "config.yml"));
 		} catch (IOException var2) {
 			System.out.println("Error saving Config file!");
 			var2.printStackTrace();
@@ -30,16 +30,16 @@ public class ConfigManager {
 
 	public void createFiles() {
 
-		if (!staffChat.getDataFolder().exists()) {
-			staffChat.getDataFolder().mkdir();
+		if (!staffCorePlugin.getDataFolder().exists()) {
+			staffCorePlugin.getDataFolder().mkdir();
 		}
 
-		File file = new File(staffChat.getDataFolder(), "config.yml");
+		File file = new File(staffCorePlugin.getDataFolder(), "config.yml");
 		InputStream in;
 
 		if (!file.exists()) {
 			try {
-				in = staffChat.getResourceAsStream("config.yml");
+				in = staffCorePlugin.getResourceAsStream("config.yml");
 				Files.copy(in, file.toPath());
 			} catch (IOException var5) {
 				var5.printStackTrace();
@@ -49,7 +49,7 @@ public class ConfigManager {
 
 	public static void registerConfig() {
 		try {
-			config = ConfigurationProvider.getProvider(YamlConfiguration.class).load(new File(staffChat.getDataFolder(), "config.yml"));
+			config = ConfigurationProvider.getProvider(YamlConfiguration.class).load(new File(staffCorePlugin.getDataFolder(), "config.yml"));
 		} catch (IOException var1) {
 			var1.printStackTrace();
 		}
